@@ -1,9 +1,28 @@
 package com.and.pd.youtubebyrxa;
 
 public class VideoYoutube {
-    private String title;
-    private String thumbnail;
     private String videoId;
+    private String title;
+    private String description;
+    private String thumbnail;
+
+    public VideoYoutube() {
+    }
+    public VideoYoutube(String title, String thumbnail, String videoId, String description) {
+
+        this.title = title;
+        this.thumbnail = thumbnail;
+        this.videoId = videoId;
+        this.description = description;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
     public String getTitle() {
         return title;
@@ -29,10 +48,4 @@ public class VideoYoutube {
         this.videoId = videoId;
     }
 
-    public VideoYoutube(String title, String thumbnail, String videoId) {
-
-        this.title = title;
-        this.thumbnail = thumbnail;
-        this.videoId = videoId;
-    }
 }
