@@ -1,4 +1,4 @@
-package com.and.pd.youtubebyrxa;
+package com.and.pd.myapplication;
 
 import org.junit.Test;
 

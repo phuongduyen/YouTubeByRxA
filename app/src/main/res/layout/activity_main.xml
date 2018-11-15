@@ -6,19 +6,26 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <EditText
-        android:id="@+id/search_input"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="search"
-        android:imeOptions="actionSearch"
-        android:inputType="text"
-        android:maxLines="1" />
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_weight="9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="Search"
+            android:id="@+id/bt_search"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-    <!-- RecyclerView will show the result in a ordered manner
-    by infalting the video_item.xml which has the CardView set to show
-    Thumbnail, Video title, id and short description -->
+    </LinearLayout>
+
+
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/videos_recycler_view"
         android:layout_width="match_parent"

@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">YouTubeByRxA</string>
+    <string name="app_name">My Application</string>
+    <string name="failed">Failed to initialize Youtube Player</string>
 </resources>
